@@ -6,7 +6,7 @@ function LED1_On() {
 	/*document.getElementById("sensor").innerHTML="led on";*/
 	message = new Paho.MQTT.Message("ON");
     	message.destinationName = "cristina.chavez@unach.edu.ec/tema1";
-   	c.send(message);
+   	Client.send(message);
   
 }
 function LED1_Off(){	
@@ -15,7 +15,7 @@ function LED1_Off(){
 	/*document.getElementById("sensor").innerHTML="led off";*/
 	message = new Paho.MQTT.Message("OFF");
    	message.destinationName = "cristina.chavez@unach.edu.ec/tema1";
-    	c.send(message);
+    	Client.send(message);
 }
 
 
