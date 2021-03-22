@@ -42,7 +42,7 @@ function LED1_Off(){
     console.log("Conectado...");
 	
     client.subscribe("cristina.chavez@unach.edu.ec/tema1");
-    message = new Paho.MQTT.Message("Hola desde Github");
+    message = new Paho.MQTT.Message(" Hola, soy Cris desde Github");
     message.destinationName = "cristina.chavez@unach.edu.ec/tema1";
     client.send(message);
 	
