@@ -50,10 +50,10 @@ function LED1_Off(){
 	  
 /* subscripción*/
     client.subscribe("cristina.chavez@unach.edu.ec/dis-ser");
-/*como envíar un mensaje	  
+/*como envíar un mensaje*/	  
     message = new Paho.MQTT.Message(" Hola, soy Cris desde Github");
     message.destinationName = "cristina.chavez@unach.edu.ec/tema1";
-    client.send(message);*/
+    client.send(message);
 	    
 	
   }
