@@ -3,7 +3,7 @@
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 <script src="/static/js/index.js"></script>
-<script src="/static/js/bott.js""></script>
+<script src="/static/js/onoff.js""></script>
 
 <title>Embebidos</title>
 </head>
@@ -22,10 +22,11 @@ body {
 </style>
 	
 
-<h1>Estado del Sensor:<h1>
+<h1>Estado del Led:</h><h id="On-off">--</h1>
 	<br></br>
 	<br></br>
-<button id = 'LED1On'type="button" onclick="LED1_On();">
+				  
+<button id = 'LED' type="button" onclick="ON_OFF();">
 ON/OFF!</button>
 
 
