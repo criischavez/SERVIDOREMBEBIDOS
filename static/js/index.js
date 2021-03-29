@@ -21,8 +21,6 @@ function LED1_Off(){
 
 
 
-
-
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
@@ -74,7 +72,7 @@ function LED1_Off(){
 
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	document.getElementById("sensor").innerHTML=message.payloadString;
+
 	document.getElementById("boton").innerHTML=message.payloadString;
 
 	  
