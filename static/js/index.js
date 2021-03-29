@@ -75,6 +75,9 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	document.getElementById("sensor").innerHTML=message.payloadString;
+	document.getElementById("boton").innerHTML=message.payloadString;
+	  
+	  
   }
 
 
