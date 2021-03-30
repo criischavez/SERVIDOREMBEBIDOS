@@ -24,8 +24,8 @@ function Registro(){
    	message.destinationName = "cristina.chavez@unach.edu.ec/ser-dis";
     	client.send(message);
 	
-	onMessageArrived(message)
-	document.getElementById("registro").innerHTML= message.payloadString;
+	onMessageArrived(msg)
+	document.getElementById("registro").innerHTML= msg.payloadString;
 }
 
 
