@@ -19,6 +19,14 @@ function LED1_Off(){
 }
 
 
+function Registro(){	
+	message = new Paho.MQTT.Message("Imprimir Registro");
+   	message.destinationName = "cristina.chavez@unach.edu.ec/ser-dis";
+    	client.send(message);
+	
+	onMessageArrived(message)
+	document.getElementById("registro").innerHTML= message.payloadString;
+}
 
 
 // Create a client instance
