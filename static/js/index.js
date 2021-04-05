@@ -3,6 +3,7 @@
 function LED1_On() {
 	/*alert("led on");*/
 	console.log("led on");
+	document.getElementById("boton").innerHTML=message.payloadString;
 	/*document.getElementById("sensor").innerHTML="led on";*/
 	message = new Paho.MQTT.Message("ON");
     	message.destinationName = "cristina.chavez@unach.edu.ec/ser-dis";
